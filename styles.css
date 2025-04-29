@@ -28,7 +28,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
-    backdrop-filter: blur();
+    backdrop-filter: blur(2px);
 
 }
 
@@ -39,7 +39,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.92);
     z-index: -1;
 }
 
@@ -74,7 +73,14 @@ body {
 
 .getting-married {
     font-size: 1.5rem;
-    color:#CCCCCC;
+     color: #e0a81c;
+     margin: 1rem 0;
+    font-weight: bold;
+}
+.getting-save {
+    font-size: 1.5rem;
+      color: #f5f5f5;
+    
     margin: 1rem 0;
     font-weight: bold;
 }
@@ -168,6 +174,103 @@ body {
 }
 
 @media (max-width: 600px) {
+    .venue-name {
+        font-size: 1.5rem;
+    }
+    
+    .venue-address {
+        font-size: 1rem;
+    }
+    
+    .event-time {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        margin: 1rem;
+        max-width: 95%;
+    }
+
+    .save-date {
+        font-size: 2.5rem;
+    }
+
+    .names {
+        font-size: 2.8rem;
+    }
+
+    .getting-married {
+        font-size: 1.3rem;
+    }
+
+    .wedding-date {
+        font-size: 1.7rem;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .countdown-box {
+        min-width: 70px;
+        padding: 0.8rem;
+    }
+
+    .countdown-box span:first-child {
+        font-size: 2rem;
+    }
+
+    .venue-details {
+        padding: 1rem;
+    }
+
+    .venue-name {
+        font-size: 1.8rem;
+    }
+    
+    .venue-address {
+        font-size: 1.1rem;
+    }
+    
+    .event-time {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .save-date {
+        font-size: 2rem;
+    }
+
+    .names {
+        font-size: 2.2rem;
+    }
+
+    .getting-married {
+        font-size: 1.1rem;
+    }
+
+    .wedding-date {
+        font-size: 1.4rem;
+    }
+
+    .countdown-box {
+        min-width: 60px;
+        padding: 0.6rem;
+    }
+
+    .countdown-box span:first-child {
+        font-size: 1.8rem;
+    }
+
     .venue-name {
         font-size: 1.5rem;
     }
